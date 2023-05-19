@@ -1,0 +1,755 @@
+body, html {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+    width: 100vw;
+    height: 100%;
+    /* font-family: montserrat , sans-serif; */
+}
+
+.scrollTop {
+    position: fixed;
+    text-align: center;
+    background-color: #6384FF;
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+.fixed-scrollTop {
+    position: relative;
+    left: 96vw;
+    top: 93vh;
+}
+
+.scrollTop:hover {
+    background-color: #323232;
+    cursor: pointer;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: #344585;
+    font-family: montserrat , sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    color: white;
+    background-color: #344585;
+    margin: 0 auto;
+    height: 90px;
+
+}
+
+.container .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+#logo-picture {
+    height: 34px;
+    margin: 20px 0 0 10px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.nav-item #nav-buttom {
+    text-align: center;
+    border: solid 2px white;
+    padding: 8px 40px;
+}
+
+.nav-item #nav-buttom:hover {
+    background-color: white;
+    color: #6384FF;
+}
+
+.nav-item {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6384FF;
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+    font-family: sans-serif;
+    width: 100%;
+
+
+}
+
+.title-hero {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: solid 10px white;
+    animation: typing 3s steps(30) infinite alternate;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 101%;
+    }
+}
+
+.services h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 44px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.line {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.line #hr1 {
+    width: 10%;
+    border: none;
+    border-bottom: solid 2px #6384FF;
+    display: inline-block;
+
+}
+
+.line #hr2 {
+    width: 10px;
+    border: none;
+    border-bottom: solid 2px white;
+    display: inline-block;
+}
+
+.line #hr3 {
+    width: 20px;
+    border: none;
+    border-bottom: solid 2px #6384FF;
+    display: inline-block;
+}
+
+.services h4 {
+    color: #32325C;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.services-container p {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #2a2a2a;
+}
+
+.case-study, .test, .quote, .pricing-plans, .teamwork {
+    text-align: center;
+}
+
+.service1, .service2, .service3 {
+    line-height: 35px;
+}
+
+.services-container img {
+    padding-top: 50px;
+}
+
+.search-container {
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.details-serch h1 {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    color: #323232;
+    line-height: 55px;
+}
+
+.details-serch p {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #2a2a2a;
+    line-height: 35px;
+}
+
+.line1 #hr1 {
+    width: 30%;
+    border: none;
+    border-bottom: solid 2px #6384FF;
+    display: inline-block;
+
+}
+
+.line1 #hr2 {
+    width: 10px;
+    border: none;
+    border-bottom: solid 2px white;
+    display: inline-block;
+}
+
+.line1 #hr3 {
+    width: 20px;
+    border: none;
+    border-bottom: solid 2px #6384FF;
+    display: inline-block;
+}
+
+#search-engine-buttom {
+    text-decoration: none;
+    background-color: white;
+    color: #6384FF;
+    border: solid 1px #6384FF;
+    padding: 10px 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#search-engine-buttom:hover {
+    color: white;
+    background-color: #6384FF;
+}
+
+
+.case-study h1, .pricing h1, .teamwork h1, .test h1, .quote h1 {
+    font-size: 44px;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: #2a2a2a;
+    margin-bottom: 5px;
+}
+
+
+.seo-case {
+    flex-flow: wrap row;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.container-case-study {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.4s linear;
+    background-color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    padding: 10px;
+    text-align: center;
+
+}
+
+.content #hr-top, #hr-bottom {
+    width: 90px;
+}
+
+.content a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.container-case-study:hover .overlay {
+    opacity: 0.8;
+}
+
+.fa {
+    padding: 0 5px;
+}
+
+.top {
+    width: 340px;
+    height: 200px;
+
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    line-height: 90px;
+}
+
+.price-yellow .top {
+    background-color: #fabc05;
+}
+
+.price-green .top {
+    background-color: #39A96F;
+}
+
+.price-blue .top {
+    background-color: #6384FF;
+}
+
+.left {
+    width: 120px;
+    height: 80px;
+    background-color: white;
+    border-radius: 100% 50% 0% 100% / 100% 0% 100% 0%;
+    position: relative;
+    bottom: 220px;
+    z-index: 3;
+
+}
+
+.center {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: solid 5px grey;
+    background-color: white;
+    position: relative;
+    left: 95px;
+    bottom: 120px;
+    z-index: 5;
+}
+
+.center h1 {
+    color: #323232;
+    text-align: center;
+    font-size: 2.1em;
+}
+
+.center p {
+    color: #323232;
+    text-align: center;
+}
+
+.right {
+    width: 150px;
+    height: 100px;
+    background-color: white;
+    border-radius: 90% 100% 70% 100% / 100% 100% 0% 0%;
+    position: relative;
+    left: 190px;
+    bottom: 320px;
+    z-index: 4;
+}
+
+.standard, .business, .gold {
+    position: relative;
+    background-color: white;
+    width: 340px;
+    bottom: 300px;
+
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.standard p, .business p, .gold p {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #2a2a2a;
+
+
+
+}
+
+.price-yellow:hover .center {
+    background-color: #fabc05;
+}
+
+.price-blue:hover .center {
+    background-color: #6384FF;
+}
+
+.price-green:hover .center {
+    background-color: #39A96F;
+}
+
+.price {
+    background-color: white;
+    width: 340px;
+    height: 500px;
+}
+
+#sign1, #sign2, #sign3 {
+    text-decoration: none;
+    color: #2a2a2a;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px 30px;
+    margin: 10px 60px;
+}
+
+#sign1 {
+    border: solid 2px #FABC05;
+}
+
+#sign1:hover {
+    background-color: #FABC05;
+    color: white;
+}
+
+#sign2 {
+    border: solid 2px #6384FF;
+}
+
+#sign2:hover {
+    background-color: #6384FF;
+    color: white;
+}
+
+#sign3 {
+    border: solid 2px#39A96F;
+}
+
+#sign3:hover {
+    background-color: #39A96F;
+    color: white;
+}
+
+.teamwork p {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #2a2a2a;
+}
+
+.teamwork-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 30px;
+    justify-content: center;
+
+}
+
+.teamwork-member h4 {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #32325C;
+    margin-bottom: 5px;
+
+}
+
+.teamwork-member p {
+    color: #32325C;
+    margin-bottom: 10px;
+}
+
+.teamwork-member:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.teamwork-member:hover h4 {
+    color: #6384FF;
+}
+
+.company img {
+    padding: 50px;
+}
+
+.company {
+    text-align: center;
+}
+
+.cloud-container {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom-cloud {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: #FABC05;
+}
+
+.top-cloud {
+    position: relative;
+    top: 30px;
+    left: 60px;
+    width: 180px;
+    height: 80px;
+    border-radius: 50% 50% 28% 72% / 100% 100% 0% 0%;
+    background-color: #FABC05;
+}
+
+.bottom-cloud p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+    padding: 30px;
+}
+
+.icon-comma {
+    padding-top: 20px;
+}
+
+.border-left {
+    position: relative;
+    left: 150px;
+    top: 2px;
+    border-left: dashed#6384FF 4px;
+    width: 10px;
+    height: 30px;
+}
+
+.name-test1 h2 {
+    color: #6384FF;
+    font-family: sans-serif;
+}
+
+.name-test1 h4 {
+    color: #32325C;
+    font-family: sans-serif;
+}
+
+.cloud2 .bottom-cloud, .cloud2 .top-cloud {
+    background-color: #6384FF;
+}
+
+.cloud3 .bottom-cloud, .cloud3 .top-cloud {
+    background-color: #39A96F;
+}
+
+input {
+    border: solid 2px #344585;
+    border-radius: 5px;
+    padding: 25px 30px;
+}
+
+placeholder {
+    font-family: sans-serif;
+    color: #344585;
+
+}
+
+textarea {
+    border: solid 2px #344585;
+    border-radius: 5px;
+    padding: 25px 30px;
+    font-family: sans-serif;
+}
+
+a.QUOTE {
+    text-decoration: none;
+    border: solid 2px #6384FF;
+    border-radius: 5px;
+    color: #6384FF;
+ font-family: montserrat , sans-serif;
+ line-height: 78px;
+}
+
+a.QUOTE:hover {
+    background-color: #6384FF;
+    color: white;
+}
+
+form {
+    display: grid;
+    grid-template-areas: 'name1 email1''phone1 website1''message1 message1''get-aquote1 get-aquote1''follow1 follow1';
+    grid-template-rows: 80px 80px 200px 80px;
+    grid-template-columns: 400px 400px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.name {
+    grid-area: name1;
+
+
+}
+
+.email {
+    grid-area: email1;
+
+}
+
+.phone {
+    grid-area: phone1;
+}
+
+.website {
+    grid-area: website1;
+}
+
+.message {
+    grid-area: message1;
+
+}
+
+.QUOTE {
+    grid-area: get-aquote1;
+}
+
+.follow {
+    grid-area: follow1;
+}
+
+.follow, .follow a {
+    color: #6384FF;
+  font-family: montserrat , sans-serif; }
+
+.follow h3 {
+    display: inline-block;
+}
+
+.contact {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-left {
+    display: flex;
+    column-gap: 50px;
+}
+
+.contact-left a:hover {
+    color: #6384FF;
+    cursor: pointer;
+}
+
+.phone a, .email a {
+    text-decoration: none;
+    color: #2a2a2a;
+    font-family: sans-serif;
+    font-size: large;
+
+
+}
+
+.contact h2 {
+    color: #2a2a2a;
+    font-family: sans-serif;
+    font-size: xx-large;
+    margin: 0;
+}
+
+.contact .contact-left .address p {
+    font-size: larger;
+    margin: 0;
+}
+
+#contact {
+    text-decoration: none;
+    color: #6384FF;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 18px;
+    border: 2px solid #6384FF;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+#contact:hover {
+    background-color: #6384FF;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    color: #2a2a2a;
+}
+
+.icon-footer i {
+    padding: 5px;
+}
+
+.footer-container i:hover, .footer-container h3:hover {
+    color: #0056b3;
+}
+
+.footer-container h3 {
+    color: #323232;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.privacy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:600px) {
+    .nav-item {
+        display: none;
+    }
+
+    .nav {
+        width: 100vw;
+    }
+
+    .hero, .search-container, .pricing-container,.contact-left,.contact{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+     .pricing-container{
+        row-gap: 10px;
+     }
+    .services-container{
+        grid-template-columns: 1fr;
+    }
+}
